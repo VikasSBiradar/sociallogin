@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+    <span>Google social login</span>
+    <div class="spacer"></div>
+        <img class="image-class" src="{{profile.picture}}">
+        <button mat-fab extended (click)="logout()">
+            <mat-icon>exit_to_app</mat-icon>
+            Logout
+        </button>
+</mat-toolbar>
+
+<div class="dashboard">
+    <h1>Dashboard-user has logged in</h1>
+
+    <p>
+        
+        {{profile.email}}
+        {{profile.name}}
+    </p>
+</div>
